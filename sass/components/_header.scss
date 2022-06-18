@@ -1,0 +1,9 @@
+.header {
+    border-bottom: 1px solid $secondary-bg-color;
+}
+
+.header__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+}
