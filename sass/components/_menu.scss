@@ -30,6 +30,8 @@
 }
 
 .menu-button.is-open .icon-cross {
+    @media screen and (max-width:$max-mobile) {}
+
     display: block;
 }
 
@@ -44,7 +46,9 @@
 
 
     &.is-open {
-        display: block;
+        @media screen and (max-width:$max-mobile) {
+            display: block;
+        }
     }
 
     @media screen and (max-width: 767px) {
