@@ -1,0 +1,68 @@
+.menu-button {
+    z-index: 2;
+    position: absolute;
+    right: 15px;
+
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 0;
+    background-color: $primary-white-color;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button:hover .icon-cross,
+.menu-button:hover .icon-menu {
+    fill: $primary-site-color;
+    background-color: black;
+}
+
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container {
+    z-index: 1;
+    background-color: $primary-white-color;
+
+
+
+    &.is-open {
+        display: block;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        background-color: $primary-white-color;
+
+        padding: 48px 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+
+    }
+}

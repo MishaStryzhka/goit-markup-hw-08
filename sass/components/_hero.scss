@@ -1,16 +1,42 @@
 .hero {
-    max-width: 1600px;
-    height: 600px;
+
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     background-color: #C4C4C4;
+    background-position: 50% 50%;
+    text-align: center;
+
+    height: 400px;
+
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../images/img-hero.svg");
-    background-position: center;
-    text-align: center;
-    padding: 200px 0;
+        url("../images/img-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/img-hero-tablet.svg");
+        background-size: 100vw 400px;
+
+        max-width: 1199px;
+        height: 400px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/img-hero.svg");
+
+        max-width: 1600px;
+        height: 600px;
+    }
 }
 
 .hero__container {
@@ -23,10 +49,11 @@
     color: $primary-white-color;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
 }
 
 .hero__button {

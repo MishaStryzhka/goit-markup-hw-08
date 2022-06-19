@@ -22,27 +22,63 @@
 
             <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
 
-            <nav>
-                <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html"
-                            class="site-nav__link  site-nav__link--current">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav>
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html"
+                                class="site-nav__link site-nav__link--current">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
 
-            <ul class="contact-nav">
-                <li class="contact-nav__item"><a href="mailto:info@devstudio.com" class="contact-nav__link">
-                        <svg class="contact-nav__icon" width="16px" height="12px">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="contact-nav__item"><a href="tel:+380961111111" class="contact-nav__link">
-                        <svg class="contact-nav__icon" width="10px" height="16px">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
+                <div>
+                    <ul class="contact-nav">
+                        <li class="contact-nav__item"><a href="mailto:info@devstudio.com" class="contact-nav__link">
+                                <svg class="contact-nav__icon contact-nav__icon--envelope">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a></li>
+                        <li class="contact-nav__item contact-nav__item--tel"><a href="tel:+380961111111"
+                                class="contact-nav__link contact-nav__link--tel">
+                                <svg class="contact-nav__icon contact-nav__icon--smartphone">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a></li>
+
+                    </ul>
+
+                    <ul class="contact-list">
+                        <li class="contact-list__item">
+                            <a href="" class="contact-list__link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="contact-list__item">
+                            <a href="" class="contact-list__link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="contact-list__item">
+                            <a href="" class="contact-list__link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="contact-list__item">
+                            <a href="" class="contact-list__link">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="menu-button" aria-controls="menu-container" data-menu-button>
+                <svg class="menu-button__svg" width="24px" height="24px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/icons.svg#icon-close-black"></use>
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
 
     </header>
@@ -73,7 +109,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project1.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -95,7 +131,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project2.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту" width="450">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -116,7 +152,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project3.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту" width="450">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -137,7 +173,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project4.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту" width="450">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -158,7 +194,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project5.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту" width="450">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -179,7 +215,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project6.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту" width="450">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -200,7 +236,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project7.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту" width="450">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -221,7 +257,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project8.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту" width="450">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -242,7 +278,7 @@
                         <a href="" class="projects__cart-link">
                             <div class="projects__cart-thumb">
                                 <img class="projects__cart-img" src="./images/portfolio/project9.jpg"
-                                    alt="Логотип проекту" width="370">
+                                    alt="Логотип проекту" width="450">
                                 <div class="projects__cart-overlay">
                                     <p class="projects__cart-podtext">Ресурс предлагает комплексные предложения с разным
                                         уровнем
@@ -270,12 +306,13 @@
             <div class="footer__box">
                 <div class="footer__main">
                     <a href="./index.html" class="logo logo--footer"><span class="logo__web">Web</span>Studio</a>
-                    <ul class="contact-list">
-                        <li class="contact-list__item contact-list__item--addres">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="contact-list__item"><a href="mailto:info@devstudio.com"
-                                class="contact-list__link">info@devstudio.com</a></li>
-                        <li class="contact-list__item"><a href="tel:+380961111111" class="contact-list__link">+38 096
-                                111 11 11</a></li>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item footer__contact-item--addres">г. Киев, пр-т Леси Украинки, 26
+                        </li>
+                        <li class="footer__contact-item"><a class="footer__contact-link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer__contact-item"><a class="footer__contact-link" href="tel:+380961111111">+38
+                                096 111 11 11</a></li>
                     </ul>
                 </div>
 
@@ -331,6 +368,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

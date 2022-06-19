@@ -2,6 +2,10 @@
     @extend %section;
 
     padding-top: 0;
+
+    @media screen and (max-width:$max-tablet) {
+        display: none;
+    }
 }
 
 .features__container {

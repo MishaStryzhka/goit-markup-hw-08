@@ -11,10 +11,51 @@
 }
 
 .footer__box {
-    display: inline-flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    // display: inline-block;
+    // align-items: baseline;
+
 }
 
 .footer__main {
-    margin-right: 70px;
+    // margin-right: 70px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:$tablet) {
+        margin-right: 165px;
+    }
+}
+
+.footer__contact-list {
+    @extend %list;
+}
+
+.footer__contact-item {
+    margin-bottom: 8px;
+}
+
+.footer__contact-item.footer__contact-item--addres {
+    color: $primary-white-color;
+}
+
+.footer__contact-link {
+    @extend %link;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+        color: $primary-site-color;
+    }
 }
