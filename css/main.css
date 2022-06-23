@@ -380,6 +380,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+
 .header {
   border-bottom: 1px solid #f5f4fA;
 }
@@ -1058,6 +1068,7 @@ body {
 }
 
 .backdrop {
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
