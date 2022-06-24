@@ -21,21 +21,9 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
-}
-
-.benefits__item {
 
     @media screen and (min-width: $desktop) {
-
-        max-width: 270px;
-
-        &:not(:nth-child(4n)) {
-            margin-right: 30px;
-        }
-
-        &:not(:nth-last-child(-n + 4)) {
-            margin-bottom: 10px;
-        }
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 

@@ -4,6 +4,7 @@
     font-weight: 500;
 
     font-size: 40px;
+
     line-height: 1.18;
     letter-spacing: 0.02em;
 
@@ -16,6 +17,10 @@
         margin-bottom: 0;
 
         margin-right: 84px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 305px;
     }
 
 

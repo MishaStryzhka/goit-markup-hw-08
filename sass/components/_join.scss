@@ -1,5 +1,9 @@
 .join {
     margin-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 93px;
+    }
 }
 
 .join-title {
