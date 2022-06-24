@@ -41,13 +41,17 @@
 
 .menu-container {
     z-index: 1;
+
+
     background-color: $primary-white-color;
 
 
 
     &.is-open {
         @media screen and (max-width:$max-mobile) {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
 
