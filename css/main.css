@@ -1456,6 +1456,13 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projects__cart-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .projects__cart-content {
   padding: 24px 20px;
   border: 1px solid #f5f4fA;
@@ -1608,6 +1615,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer__main {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
