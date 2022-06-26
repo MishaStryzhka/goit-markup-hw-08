@@ -39,7 +39,7 @@
 
     @media screen and (min-width: $desktop) {
         width: 358px;
-        margin-right: 7px;
+        margin-right: 12px;
     }
 
     &::placeholder {
@@ -58,6 +58,7 @@
     justify-content: center;
     align-items: center;
 
+    margin: 0 auto;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
